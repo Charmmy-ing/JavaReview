@@ -4,25 +4,14 @@ import  java.util.*;
 
 public class DataStructures {
     public static void main(String[] args) {
-        int lefit=0;
-        int right=nums.length();
-        int mid;
-        if(target<nums[0]||target>nums[nums.length()-1]){
-            return -1;
-        }
+        int[] array=new int[5];
+        List<Integer> list=new ArrayList<>();
+        List<Integer> list1=new LinkedList<>();
+       Set<Integer> set=new HashSet<>();
+       Set<Integer> set1=new TreeSet<>();
+       Map<Integer,Integer> map=new HashMap<>();
+       Stack<Integer> stack=new Stack<>();
+       Queue<Integer> queue=new LinkedList<>();
+    }
+    }
 
-        while(lefit<=right){
-            if(nums[mid]==target){
-                return mid;
-            }
-            int mid=lefit+((right-lefit)>>1);
-            if(nums[mid]<target){
-                lefit=mid+1;
-            }else{
-                right=mid-1;
-            }
-        }
-        return -1;
-    }
-    }
-}
