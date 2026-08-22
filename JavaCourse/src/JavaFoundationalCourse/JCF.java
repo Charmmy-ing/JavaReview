@@ -25,23 +25,56 @@ public class JCF {
 //       Collections.sort(list);
 //       System.out.println(list);
         //---------LinkedList---------
-        List<Integer> list=new LinkedList();
-        list.add(1);
-        list.add(0);
-        list.add(9);
-        list.add(3);
-        list.add(3);
-        list.addFirst(2);
-        list.addLast(4);
-        for(int i=0;i<list.size();i++){
-            System.out.print(list.get(i));
+//        List<Integer> list=new LinkedList();
+//        list.add(1);
+//        list.add(0);
+//        list.add(9);
+//        list.add(3);
+//        list.add(3);
+//        list.addFirst(2);
+//        list.addLast(4);
+//        for(int i=0;i<list.size();i++){
+//            System.out.print(list.get(i));
+//        }
+//        System.out.println();
+//        list.removeLast();
+//        list.removeFirst();
+//        for(int i=0;i<list.size();i++){
+//            System.out.print(list.get(i));
+//        }
+        //--------hashset--------
+
+//        HashSet<String> sites = new HashSet<String>();
+//        sites.add("Google");
+//        sites.add("Runoob");
+//        sites.add("Runoob");
+//        sites.add("Taobao");
+//        sites.add(null);
+//        sites.add("Zhihu");
+//        sites.add("Runoob");
+//        System.out.println(sites);
+//        sites.clear();
+//        System.out.println(sites.size());
+        //--------hashmap---------
+        HashMap<String,String> map=new HashMap<>();
+        map.put(null,"Canlu");
+        map.put("canlu","cf");
+        map.put("canlu","cf");
+        map.put("aaa","what");
+        System.out.println(map);
+        System.out.println(map.get("aaa"));
+        map.remove("aaa");
+        for(String s:map.keySet()){
+            System.out.println(s+"  "+map.get(s));
         }
-        System.out.println();
-        list.removeLast();
-        list.removeFirst();
-        for(int i=0;i<list.size();i++){
-            System.out.print(list.get(i));
+        for(String s:map.values()){
+            System.out.println(s);
+        }
+        System.out.println(map);
+        map.clear();
+        System.out.println(map);
+       System.out.println( map.size());
+
+            }
         }
 
-    }
-}
