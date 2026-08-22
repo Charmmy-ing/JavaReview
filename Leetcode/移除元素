@@ -1,0 +1,23 @@
+//移除元素
+int slowIndex=0;
+       for(int fastIndex=0;fastIndex<nums.length;fastIndex++){
+        if(nums[fastIndex]!=val){
+            nums[slowIndex++]=nums[fastIndex];
+        }
+       }
+       return slowIndex;
+    }
+    //-------update-----
+    class Solution {
+    public int removeElement(int[] nums, int val) {
+       int slowIndex=0;
+       int fastIndex=0;
+        while(fastIndex<nums.length){
+        if(nums[fastIndex]!=val){
+            nums[slowIndex++]=nums[fastIndex];
+        }
+        fastIndex++;
+       }
+       return slowIndex;
+    }
+}
